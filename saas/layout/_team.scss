@@ -1,0 +1,54 @@
+.team {
+    background-color: var(--button-background-color);
+    padding-bottom: 94px;
+    padding-top: 94px;
+    max-width: 1600px;
+    margin: auto;
+}
+
+.team__title {
+    padding-bottom: 50px;
+    color: var(--primery-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.team__list {
+    display: flex;
+}
+
+.team__item {
+    display: block;
+}
+
+.team__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.employee {
+    background-color: var(--white-text-color);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 0px 0px 4px 4px;
+}
+
+.employee__title {
+    color: var(--primery-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.employee__subtitle {
+    margin-top: 10px;
+    color: var(--secondery-text-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
