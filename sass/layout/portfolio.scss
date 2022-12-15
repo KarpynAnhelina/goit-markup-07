@@ -9,20 +9,19 @@
 }
 
 .portfolio-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
+ 
+    // @media screen and (min-width768px){
+    //     display: flex;
+    //         flex-wrap: wrap;
+    //         gap: 30px;
+    // }
+  
 }
-
-.portfolio-list__item {
-        flex-basis: calc((100% - 15px * 2) / 1);
-    @media screen and(min-width:768px) {
-        flex-basis: calc((100% - 15px * 2) / 2);
-    }
-    @media screen and(min-width:1200) {
-        flex-basis: calc((100% - 30px * 2) / 3);
-}
-}
+  
+//  .portfolio-list__item{
+//  flex-basis: calc((100% - 30px * 2) / 3);
+//   }
+     
 
 .portfolio-list__link {
     display: block;

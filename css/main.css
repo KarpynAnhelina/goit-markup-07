@@ -37,21 +37,25 @@ img {
 }
 
 .container {
-  outline: 2px solid red;
-  max-width: 480px;
+  outline: 10px solid red;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 }
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 768px;
+    width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
-    max-width: 1200px;
+    width: 1200px;
   }
 }
 
@@ -155,14 +159,21 @@ img {
 }
 
 .header__logo {
-  padding-top: 24px;
-  padding-bottom: 25px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   color: var(--accent-text-color);
   font-family: Raleway, sans-serif;
   font-weight: 700;
-  font-size: 26px;
+  font-size: 24px;
   line-height: 1.2;
   text-decoration: none;
+}
+@media screen and (min-width: 1200px) {
+  .header__logo {
+    padding-top: 26px;
+    padding-bottom: 26px;
+    font-size: 26px;
+  }
 }
 
 .header__logo-studio {
@@ -184,10 +195,7 @@ img {
 }
 
 .header__nav-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: 93px;
+  display: none;
 }
 
 .nav-wrap__item {
@@ -230,10 +238,7 @@ img {
 
 /* CONTACTS */
 .contact-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: auto;
+  display: none;
 }
 
 .contact-wrap:first-child {
@@ -526,7 +531,7 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   .team__list {
     -ms-flex-pack: distribute;
         justify-content: space-around;

@@ -1,14 +1,19 @@
 .header__logo {
-    padding-top: 24px;
-    padding-bottom: 25px;
+    padding-top: 16px;
+    padding-bottom: 16px;
     color: var(--accent-text-color);
     font-family: Raleway, sans-serif;
     font-weight: 700;
-    font-size: 26px;
+    font-size: 24px;
     line-height: 1.2;
     text-decoration: none;
+@media screen and(min-width:1200px) {
+    padding-top: 26px;
+        padding-bottom: 26px;
+        font-size: 26px;
 }
-
+}
+ 
 .header__logo-studio {
     color: var(--primery-text-color);
 }
@@ -23,8 +28,9 @@
 }
 
 .header__nav-list {
-    display: flex;
-    margin-left: 93px;
+    display: none;
+    // display: flex;
+    // margin-left: 93px;
 }
 
 .nav-wrap__item {
@@ -65,8 +71,9 @@
 }
 /* CONTACTS */
 .contact-wrap {
-    display: flex;
-    margin-left: auto;
+    display: none;
+    // display: flex;
+    // margin-left: auto;
 }
 
 .contact-wrap:first-child {
