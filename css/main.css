@@ -741,6 +741,19 @@ img {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .portfolio-list__item {
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio-list__item {
+    -ms-flex-preferred-size: calc((100% - 60px) / 3);
+        flex-basis: calc((100% - 60px) / 3);
+  }
+}
+
 .portfolio-list__link {
   display: block;
   color: var(--primery-text-color);
@@ -795,7 +808,6 @@ img {
 }
 
 .project {
-  max-width: 450px;
   padding: 20px 24px;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
