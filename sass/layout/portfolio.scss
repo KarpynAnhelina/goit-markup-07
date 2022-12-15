@@ -10,22 +10,21 @@
 
 .portfolio-list {
     display: block;
- @media screen and (min-width:768px) {
-        display: flex;
-         flex-wrap: wrap;
-        gap: 30px;
+// //  @media screen and (min-width:768px) {
+// //         display: flex;
+// //          flex-wrap: wrap;
+// //         gap: 30px;
+// //     }
+// }
+.portfolio-list__item{
+outline: 10px solid blue;
+
+     @media screen and (min-width:768px) {
+    flex-basis: calc((100% - 30px)/2);}
+    @media screen and (min-width:1200px) {
+    flex-basis: calc((100% - 60px)/3); 
     }
 }
-
-//  .portfolio-list__item{
-// @media screen and (min-width:768px){
-//     flex-basis: 50%;
-
-// @media screen and (min-width:1200px) {
-//     flex-basis: 33.3%;
-// }
-//  }
-    
     
 .portfolio-list__link {
     display: block;
@@ -70,7 +69,6 @@
 }
 
 .project {
-    max-width: 450px;
     padding: 20px 24px;
     border-left: 1px solid #eeeeee;
     border-right: 1px solid #eeeeee;
