@@ -10,6 +10,20 @@
   }
 }
 
+.portfolio-list {
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .portfolio-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+
 .portfolio-list__link {
   display: block;
   color: var(--primery-text-color);
@@ -64,6 +78,7 @@
 }
 
 .project {
+  max-width: 450px;
   padding: 20px 24px;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
